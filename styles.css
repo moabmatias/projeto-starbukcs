@@ -1,0 +1,94 @@
+/*o asterisco sigifica TUDO. Sempre devo começar meu CSS com essas configurações abaixo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* Aqui todo o conteúdo da minha página vai ficar na família Poppins */
+}
+
+body {
+    padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.conteudo {
+    width: 100%; /* Aqui estou mandando ele ocupar a tela toda */
+    display: flex; /*com o display flexível eu decido aonde minha caixa (div) vai ficar*/
+    align-items: center;
+    justify-content: space-between; /*space between significa ESPAÇO ENTRE*/
+}
+
+.caixa-texto {
+    width: 600px;
+}
+
+
+h1 {
+    color: rgb(17, 7, 104);
+    font-size: 60px; /* Tamanho da fonte */
+    font-weight: bold; /* Espessura da fonte, pode ser colocado o nome ou o valor como no exemplo abaixo */
+}
+
+span{
+    color: darkgreen;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background: darkgreen;
+    color: white;
+    border-radius: 40px; /* Arredondamento das bordas */
+    border: none; /* Sem borda */
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer; /* Muda o ponteiro do mouse ao posicionar sobre o botão */
+    transition: 0.5s; /* Causa um efeito de transição */
+}
+
+button:hover { /* O hover é para mudar a cor do botão ao passar o mouse sobre ele */
+    background: rgb(55, 129, 129);
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-menu {
+    width: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.botao-menu:hover {
+    transform: translateY(-30px);
+}
+
+.starbucks {
+    width: 350px;
+    /*LARGURA*/
+}
+
+.circulo {
+    width: 100%; /*SIGNIFICA LARGURA*/
+    height: 100%; /*SIGNIFICA ALTURA*/
+    background: darkgreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(680px at right 720px);
+    z-index: -1;
+}

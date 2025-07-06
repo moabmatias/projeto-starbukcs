@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!--VERSÃO MAIS ATUALIZADA DO HTML-->
+<html lang="pt-br"> <!--ESCOLHA DA LÍNGUA DO SITE-->
+
+<head> <!--As configurações do site-->
+    <meta charset="UTF-8"> <!--São configurações de caracteres especiais do alfabeto ocidental-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--aqui informa que nossa ´[agina é compatível com todos os dispositivos]-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Starbucks</title>
+</head>
+
+<body> <!--CONTEÚDO DO SITE-->
+    <div class="circulo"></div>
+
+    <img src="./assets/logo.png" alt="Logo da página" width="100" height="100">
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h1>It's not just Coffee It's <span>Starbucks</span></h1>
+            <!--a tag span é quando eu quero siolar um pedaço de meu texto para aplicar uma formatação diferente-->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit, sint magni, eaque totam,
+                voluptates illum provident voluptatem voluptatum iure iusto impedit illo similique
+                voluptate ipsum deleniti cum sed saepe dolores.</p>
+            <button>Clique no Sininho</button>
+        </div>
+        <div class="imagem">
+            <img class="starbucks" src="./assets/img1.png"copao1">
+        </div>
+    </div>
+    <div class="menu">
+        <img onclick="trocarCor('#017143'); trocarImagem('./assets/img1.png')" class="botao-menu" src="./assets/thumb1.png" alt="copinho1">
+        <img onclick="trocarCor('#eb7495'); trocarImagem('./assets/img2.png')" class="botao-menu" src="./assets/thumb2.png" alt="copinho2">
+        <img onclick="trocarCor('#d752b1'); trocarImagem('./assets/img3.png')" class="botao-menu" src="./assets/thumb3.png" alt="copinho3">
+    </div>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
